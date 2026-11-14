@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: BottleHealth
+  m_EditorClassIdentifier: 
+  itemName: Bottle Health
+  desc: Restores 25 HP instantly
+  icon: {fileID: 21300000, guid: fae65b04e2e8f42438a6d030833dea5e, type: 3}
+  prefab: {fileID: 1624690310387411416, guid: d52274f29ca364047b70f0f1c1874530, type: 3}
+  effect: 0
+  damage: 0
+  defense: 0
+  amount: 25
+  price: 5
+  sellPrice: 2
+  weaponIndex: 0
+  shieldIndex: 0
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 5735004611530502562, guid: a4aa21825f448ca4b9ca0ff8e2a0fb11, type: 3}
+  allowedSlot: 0
+  isTwoHanded: 0

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: OHS01_Stick
+  m_EditorClassIdentifier: 
+  itemName: Stick Sword
+  desc: Not sharp enough to cut, but more than enough to bonk.
+  icon: {fileID: 21300000, guid: 7f5298e8c86732342a78a0e42e27c82f, type: 3}
+  prefab: {fileID: 5775833793221463485, guid: b0b6901768337dc47b1835d6f0e5a25b, type: 3}
+  effect: 3
+  damage: 1
+  defense: 0
+  amount: 0
+  price: 1
+  sellPrice: 1
+  weaponIndex: 0
+  shieldIndex: 0
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 7856965278125090268, guid: 5e32644ea908c1f45b877b41f31a3a37, type: 3}
+  allowedSlot: 1
+  isTwoHanded: 0

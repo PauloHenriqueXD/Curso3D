@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: OHS04_Sword
+  m_EditorClassIdentifier: 
+  itemName: King Sword
+  desc: A king's sword. It looks massive at first glance
+  icon: {fileID: 21300000, guid: 7cdddacb9338d584d9a74be665810bd8, type: 3}
+  prefab: {fileID: 5564305034757115275, guid: cfbf34caf2a00374584de0ceedf51efd, type: 3}
+  effect: 3
+  damage: 15
+  defense: 0
+  amount: 0
+  price: 20
+  sellPrice: 10
+  weaponIndex: 3
+  shieldIndex: 0
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 7856965278125090268, guid: 1b6359a6496cf2d46abf4616e5d2f8ac, type: 3}
+  allowedSlot: 1
+  isTwoHanded: 0

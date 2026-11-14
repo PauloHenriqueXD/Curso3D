@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: Shield10
+  m_EditorClassIdentifier: 
+  itemName: Runic Shield
+  desc: Its weathered runes whisper tales of ages past.
+  icon: {fileID: 21300000, guid: acd4da00f128fc64093d23f11211a9ee, type: 3}
+  prefab: {fileID: 7043021208405687974, guid: a56a1fa25ed09824eb55f73a02d01b56, type: 3}
+  effect: 4
+  damage: 0
+  defense: 25
+  amount: 0
+  price: 45
+  sellPrice: 20
+  weaponIndex: 0
+  shieldIndex: 9
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 5541485418517277606, guid: 33b256ea5696ff44eba0ce4e68b38506, type: 3}
+  allowedSlot: 2
+  isTwoHanded: 0

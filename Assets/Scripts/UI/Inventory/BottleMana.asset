@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: BottleMana
+  m_EditorClassIdentifier: 
+  itemName: Bottle Mana
+  desc: Restores 25 MP instantly.
+  icon: {fileID: 21300000, guid: 5bfbe5424897e8d4d97d7028d2541813, type: 3}
+  prefab: {fileID: 1624690310387411416, guid: 85b4d9f22e7cab44abbf093f1d5901da, type: 3}
+  effect: 2
+  damage: 0
+  defense: 0
+  amount: 25
+  price: 5
+  sellPrice: 2
+  weaponIndex: 0
+  shieldIndex: 0
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 8396006302279737614, guid: a9b958583f5459c4695519fad1714546, type: 3}
+  allowedSlot: 0
+  isTwoHanded: 0

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: Shield02
+  m_EditorClassIdentifier: 
+  itemName: Button Shield
+  desc: Its size may deceive, but its protection is real.
+  icon: {fileID: 21300000, guid: 154483b663cd4aa4ebefa498e5152f62, type: 3}
+  prefab: {fileID: 5431196096016614111, guid: b5a0e37b2cf23c7418d698c2218a716f, type: 3}
+  effect: 4
+  damage: 0
+  defense: 5
+  amount: 0
+  price: 5
+  sellPrice: 3
+  weaponIndex: 0
+  shieldIndex: 1
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 3012958723718610240, guid: 014a549e1012d724ea93d71c2b823cb9, type: 3}
+  allowedSlot: 2
+  isTwoHanded: 0

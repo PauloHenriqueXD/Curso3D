@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: Shield06
+  m_EditorClassIdentifier: 
+  itemName: Silver Shield
+  desc: Crafted from silver, it reflects both light and courage.
+  icon: {fileID: 21300000, guid: 501135888caa91c498819b316c108d6f, type: 3}
+  prefab: {fileID: 6568898413871916865, guid: 416c2dbc12c8d564e8953c0b49c8ecae, type: 3}
+  effect: 4
+  damage: 0
+  defense: 16
+  amount: 0
+  price: 30
+  sellPrice: 15
+  weaponIndex: 0
+  shieldIndex: 5
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 7100444719302455266, guid: 35ee8070656cb414eaaac453799fa185, type: 3}
+  allowedSlot: 2
+  isTwoHanded: 0

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0673cb8a1670640b943593d63e3323, type: 3}
+  m_Name: OHS07_Sword
+  m_EditorClassIdentifier: 
+  itemName: Queen Sword
+  desc: The sword of a queen, elegant yet deadly
+  icon: {fileID: 21300000, guid: 6431257d25ef9984c9f7f91dfbd12398, type: 3}
+  prefab: {fileID: 6747168035857443533, guid: c77c29b022944b646ba0ba8b32644b9e, type: 3}
+  effect: 3
+  damage: 15
+  defense: 0
+  amount: 0
+  price: 20
+  sellPrice: 10
+  weaponIndex: 6
+  shieldIndex: 0
+  bodyIndex: 0
+  worldPickupPrefab: {fileID: 7856965278125090268, guid: 043cf10a1ef7f6f41a7481a5a0d91146, type: 3}
+  allowedSlot: 1
+  isTwoHanded: 0
