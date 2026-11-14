@@ -140,3 +140,6 @@ InitTestScene*.unity*
 /Assets/TextureHaven.meta
 /Assets/Toon Enchanted Meadow/
 /Assets/Toon Enchanted Meadow.meta
+
+# Solution gerada pelo Unity/IDE (equivalente ao *.sln acima)
+*.slnx

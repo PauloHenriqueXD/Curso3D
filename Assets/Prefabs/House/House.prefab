@@ -131,7 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2230184532862730232}
   - component: {fileID: 2656586627083263002}
-  - component: {fileID: 5297811787120580791}
   m_Layer: 0
   m_Name: DoorTrigger
   m_TagString: Untagged
@@ -175,19 +174,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3315735, y: 3.1883268, z: 9.553834}
   m_Center: {x: 0.16578674, y: 0.37596297, z: 0.24152136}
---- !u!114 &5297811787120580791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7322897065145506373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c23b750957498084f8f50ee9bf4dd85b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger
-  houseSceneName: Gameplay
 --- !u!1001 &131676646282540232
 PrefabInstance:
   m_ObjectHideFlags: 0

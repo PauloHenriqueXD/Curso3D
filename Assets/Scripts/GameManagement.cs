@@ -24,7 +24,11 @@ public class GameManagement : MonoBehaviour
         if(Player.Instance != null)
         {
             Player.Instance.playerHUD.ActiveCanvas(true); // Activate the player's HUD canvas at the start of the game
+            // o CharacterController sobrescreve transform.position se estiver ativo — desliga durante o teleporte
+            var cc = Player.Instance.GetComponent<CharacterController>();
+            if (cc != null) cc.enabled = false;
             Player.Instance.transform.position = initialSpawnPosition.position; // Teleport the player to the initial spawn position at the start of the game
+            if (cc != null) cc.enabled = true;
             Player.Instance.isPaused = false; // Unpause the game when the player is spawned
             CinemachineController.Instance.AssignPlayer(); // Assign the player as the target for the Cinemachine camera if the flag is set
         }

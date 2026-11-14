@@ -50,7 +50,18 @@ public class Enemy : MonoBehaviour, IPatrolEnemy
         maxLife = life;
         startPosition = transform.position;
         lastPosition = transform.position;
+
+        // guarda a cor original para o HitFlash voltar a ela (antes voltava sempre para branco)
+        if (enemyRenderer != null)
+        {
+            flashMaterial = enemyRenderer.material; // cópia própria deste inimigo
+            originalColor = flashMaterial.color;
+        }
     }
+
+    private Material flashMaterial;
+    private Color originalColor = Color.white;
+    private Coroutine hitFlashRoutine;
 
     public virtual void Move()
     {
@@ -83,28 +94,41 @@ public class Enemy : MonoBehaviour, IPatrolEnemy
         else
         {
             // pega o efeito correspondente ao ataque (attackIndex 1~4 → índice 0~3)
-            int fxIndex = Mathf.Clamp(attackIndex - 1, 0, hitFx.Length - 1);
-
             animator.SetTrigger("Hit");
 
             Player.Instance.ShakeCamera();
 
-            StartCoroutine(HitFlash());
+            // reinicia o flash se levar outro golpe no meio do anterior
+            if (hitFlashRoutine != null) StopCoroutine(hitFlashRoutine);
+            hitFlashRoutine = StartCoroutine(HitFlash());
 
-            GameObject hitEffect = Instantiate(hitFx[fxIndex], transform.position + new Vector3(0, hitYOffset, 0), transform.rotation);
-            Destroy(hitEffect, 2f);
+            if (hitFx != null && hitFx.Length > 0)
+            {
+                int fxIndex = Mathf.Clamp(attackIndex - 1, 0, hitFx.Length - 1);
+                GameObject hitEffect = Instantiate(hitFx[fxIndex], transform.position + new Vector3(0, hitYOffset, 0), transform.rotation);
+                Destroy(hitEffect, 2f);
+            }
         }
     }
 
     IEnumerator HitFlash()
     {
-        enemyRenderer.material.color = Color.red;
+        if (flashMaterial == null) yield break;
+        flashMaterial.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        enemyRenderer.material.color = Color.white;
+        flashMaterial.color = originalColor;
         yield return new WaitForSeconds(0.2f);
-        enemyRenderer.material.color = Color.red;
+        flashMaterial.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        enemyRenderer.material.color = Color.white;
+        flashMaterial.color = originalColor;
+        hitFlashRoutine = null;
+    }
+
+    // .material cria uma cópia por inimigo; libera ao destruir para não vazar memória
+    protected virtual void OnDestroy()
+    {
+        if (flashMaterial != null)
+            Destroy(flashMaterial);
     }
 
     public virtual void Patrol()

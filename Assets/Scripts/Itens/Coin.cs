@@ -13,8 +13,12 @@ public class Coin : MonoBehaviour
         }
     }
 
+    private bool collected; // evita coletar duas vezes no mesmo frame (trigger + pulo)
+
     public void Collect()
     {
+        if (collected) return;
+        collected = true;
         GameObject effect = Instantiate(collectEffectPrefab, transform.position, Quaternion.identity);
         Destroy(effect, 3f);
         GameManagement.Instance.AddCoin();

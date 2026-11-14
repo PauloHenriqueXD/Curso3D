@@ -12,7 +12,9 @@ public class Hitbox : MonoBehaviour
             SwordHitbox swordHitbox = GetComponentInParent<SwordHitbox>();
             int damage = swordHitbox != null ? swordHitbox.damage : 0;
 
-            other.GetComponent<Enemy>().OnHit(attackIndex, damage);
+            Enemy enemy = other.GetComponentInParent<Enemy>();
+            if (enemy != null)
+                enemy.OnHit(attackIndex, damage);
         }
     }
 }

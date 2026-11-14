@@ -1,4 +1,3 @@
-using Suntail;
 using UnityEngine;
 
 public class NPC01Trigger : MonoBehaviour
