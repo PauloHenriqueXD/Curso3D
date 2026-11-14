@@ -900,8 +900,7 @@ MonoBehaviour:
   rb: {fileID: 1063477447258829290}
   hitSfx: {fileID: 8300000, guid: 1202ff962af52704fb2ca89c3a05969d, type: 3}
   patrolMode: 2
-  spawner: {fileID: 0}
-  waypoints: []
+  _waypoints: []
   patrolRadius: 5
   patrolSpeed: 1
   waypointStopDistance: 0.3
@@ -1004,7 +1003,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.75
-  m_BaseOffset: -0.71
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &4849108133633314326 stripped

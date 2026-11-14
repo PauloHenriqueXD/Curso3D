@@ -143,3 +143,6 @@ InitTestScene*.unity*
 
 # Solution gerada pelo Unity/IDE (equivalente ao *.sln acima)
 *.slnx
+
+# Copia de seguranca local do terreno (asset de terceiros, nao versionado)
+/_BackupTerreno/
